@@ -5358,6 +5358,11 @@ static void test_highlighting() {
         {L")", highlight_role_t::operat},
     });
 
+    highlight_tests.push_back({
+        {L">", highlight_role_t::error},
+        {L"echo", highlight_role_t::error},
+    });
+
     // Redirections substitutions.
     highlight_tests.push_back({
         {L"echo", highlight_role_t::command},
